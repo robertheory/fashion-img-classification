@@ -2,6 +2,10 @@
 
 Trabalho final da disciplina de Engenharia de Sistemas de Software Inteligentes do curso de Engenharia de Software da Pontifícia Universidade Católica do Rio de Janeiro (PUC-Rio).
 
+## Descrição do Projeto
+
+Este projeto é uma API para classificação de imagens de moda, utilizando técnicas de aprendizado de máquina. O objetivo é permitir que os usuários enviem imagens e recebam de volta a classificação correspondente.
+
 ## Instalação e Execução da API
 
 ### Pré-requisitos
