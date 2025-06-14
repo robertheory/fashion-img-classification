@@ -50,4 +50,4 @@ Em modo de desenvolvimento, utilize o modo reload para que as mudanças no códi
 flask run --host 0.0.0.0 --port 5000 --reload
 ```
 
-Acesse `http://localhost:5000/#/` no navegador para visualizar a documentação da API e testar os endpoints.
+Acesse [`http://localhost:5000`](http://localhost:5000) no navegador para visualizar a documentação da API e testar os endpoints.
