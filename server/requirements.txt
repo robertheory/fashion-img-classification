@@ -10,3 +10,11 @@ requests==2.32.3
 SQLAlchemy==2.0.38
 SQLAlchemy-Utils==0.41.2
 typing_extensions==4.12.2
+
+# ML dependencies
+pandas
+numpy
+matplotlib
+scikit-learn
+pyarrow
+requests
