@@ -20,9 +20,8 @@ home_tag = Tag(
 )
 
 
-@app.get("/", tags=[home_tag])
-def index():
+@app.get('/', tags=[home_tag])
+def home():
+    """Redirect to /openapi, screen that allows choosing the documentation style.
     """
-    Redirect to the Swagger UI documentation.
-    """
-    return redirect("/openapi/swagger-ui")
+    return redirect('/openapi/swagger')
