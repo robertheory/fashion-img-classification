@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Fashion Classification</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="container py-5">
+      <h1 class="mb-4 text-center">Fashion Classification</h1>
+      <p class="text-center mb-4">Envie uma imagem de moda para classificar.</p>
+      <p class="text-center mb-4">
+        A classificação é feita com base no modelo treinado com o Fashion MNIST.
+      </p>
+      <form
+        action="/classificate"
+        method="POST"
+        enctype="multipart/form-data"
+        class="mx-auto"
+        style="max-width: 400px"
+      >
+        <div class="mb-3">
+          <label for="imageInput" class="form-label"
+            >Selecione uma imagem</label
+          >
+          <input
+            class="form-control"
+            type="file"
+            id="imageInput"
+            name="image"
+            accept="image/*"
+            required
+          />
+          <div class="form-text">
+            Apenas arquivos de imagem. Apenas 1 arquivo.
+          </div>
+        </div>
+        <button type="submit" class="btn btn-primary w-100">Enviar</button>
+      </form>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

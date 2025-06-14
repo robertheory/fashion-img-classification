@@ -4,50 +4,24 @@ Trabalho final da disciplina de Engenharia de Sistemas de Software Inteligentes 
 
 ## Descrição do Projeto
 
-Este projeto é uma API para classificação de imagens de moda, utilizando técnicas de aprendizado de máquina. O objetivo é permitir que os usuários enviem imagens e recebam de volta a classificação correspondente.
+Este projeto é uma aplicação fullstack para classificação de imagens de moda, utilizando técnicas de aprendizado de máquina. O objetivo é permitir que os usuários enviem imagens e recebam de volta a classificação correspondente.
 
-## Instalação e Execução da API
+## Execução do Projeto
 
-### Pré-requisitos
-
-- [Python](https://www.python.org/downloads/) (versão 3.8 ou superior)
-- Virtualenv (opcional, mas recomendado)
-
-### Passos para Instalação
-
-Clone o repositório:
+1. Clone o repositório:
 
 ```bash
 git clone https://github.com/robertheory/mvp-essi.git
 cd mvp-essi
 ```
 
-Crie e ative um ambiente virtual (opcional, mas recomendado):
+2. Siga as instruções de instalação e execução para o backend em [server/README.md](server/README.md).
+
+3. Com o backend em execução, navegue até o diretório `web` e abra diretamente o arquivo `index.html` no seu navegador:
 
 ```bash
-python -m venv venv
-source venv/bin/activate # Linux/macOS
-venv\Scripts\activate # Windows
+cd web
+open index.html # macOS
+start index.html # Windows
+xdg-open index.html # Linux
 ```
-
-Instale as dependências:
-
-```bash
-pip install -r requirements.txt
-```
-
-Executando a API
-
-Para iniciar a API, execute o seguinte comando no diretório raiz do projeto:
-
-```bash
-flask run --host 0.0.0.0 --port 5000
-```
-
-Em modo de desenvolvimento, utilize o modo reload para que as mudanças no código sejam refletidas automaticamente:
-
-```bash
-flask run --host 0.0.0.0 --port 5000 --reload
-```
-
-Acesse [`http://localhost:5000`](http://localhost:5000) no navegador para visualizar a documentação da API e testar os endpoints.
